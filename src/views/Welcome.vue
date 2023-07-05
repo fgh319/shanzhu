@@ -21,7 +21,7 @@
     flex-direction: column;
     background: #eee;
     header {
-      flex-grow: 1;
+      height: 25%;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -34,11 +34,11 @@
       }
     }
     main {
-      flex-grow: 4;
-      //display: flex;
-      //flex-direction: column;
-      //justify-content: center;
-      //align-items: center;
+      height: 75%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
   }
 </style>

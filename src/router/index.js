@@ -8,8 +8,11 @@ import Forth from "@/components/welcome/Forth.vue";
 export const router = createRouter({
   history: createWebHashHistory(),
   routes: [
-    {path: '/', component: Welcome},
-    {path: '/welcome', component: Welcome, children: [
+    {path: '/', redirect: '/welcome'},
+    {path: '/welcome',
+      component: Welcome,
+      children: [
+        {path: '', redirect: '/welcome/1'},
         {path: '1', component: First},
         {path: '2', component: Second},
         {path: '3', component: Third},
