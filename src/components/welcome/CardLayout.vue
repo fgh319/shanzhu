@@ -24,5 +24,9 @@
     margin-top: 25px;
     font-weight: normal;
   }
+  :deep(svg) {
+    width: 150px;
+    height: 150px;
+  }
 }
 </style>

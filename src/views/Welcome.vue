@@ -5,7 +5,7 @@
 <template>
   <div class="wrapper">
     <header>
-      <img src="@/assets/icons/logo.svg" alt="logo">
+      <SvgIcon name="logo"></SvgIcon>
       <h1>轻记账</h1>
     </header>
     <main>
@@ -33,8 +33,9 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      img {
+      :deep(svg) {
         width: 50px;
+        height: 50px;
       }
       h1 {
         font-weight: normal;

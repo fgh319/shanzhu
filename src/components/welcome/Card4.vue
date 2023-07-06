@@ -5,7 +5,7 @@ import CardLayout from "@/components/welcome/CardLayout.vue";
 
 <template>
   <CardLayout>
-    <img src="../../assets/icons/cloud.svg" alt="云">
+    <SvgIcon name="cloud"></SvgIcon>
     <h2>云备份<br>再也不怕数据丢失</h2>
   </CardLayout>
 </template>

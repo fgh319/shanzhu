@@ -5,7 +5,7 @@ import CardLayout from "@/components/welcome/CardLayout.vue";
 
 <template>
   <CardLayout>
-    <img src="../../assets/icons/chart.svg" alt="图表">
+    <SvgIcon name="chart"></SvgIcon>
     <h2>数据可视化<br>收支一目了然</h2>
   </CardLayout>
 </template>
