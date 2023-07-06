@@ -4,20 +4,17 @@
 
 <template>
   <div class="card">
-    <slot name="card"></slot>
-  </div>
-  <div class="buttons">
-    <slot name="buttons"></slot>
+    <slot></slot>
   </div>
 </template>
 
 <style scoped lang="scss">
 .card {
+  margin: 0 16px;
   background: #fff;
   border-radius: 8px;
   box-shadow: 0 0 8px #ddd;
   flex-grow: 1;
-  width: 90%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -27,14 +24,5 @@
     margin-top: 20px;
     font-weight: normal;
   }
-}
-
-.buttons {
-  height: 20%;
-  width: 90%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  font-weight: bold;
 }
 </style>

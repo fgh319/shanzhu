@@ -9,8 +9,11 @@
       <h1>轻记账</h1>
     </header>
     <main>
-      <RouterView></RouterView>
+      <RouterView name="cards"></RouterView>
     </main>
+    <footer>
+      <RouterView name="buttons"></RouterView>
+    </footer>
   </div>
 </template>
 
@@ -34,11 +37,13 @@
       }
     }
     main {
-      height: 75%;
+      height: 60%;
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      align-items: center;
+    }
+    footer {
+      height: 15%;
+      display: flex;
     }
   }
 </style>
