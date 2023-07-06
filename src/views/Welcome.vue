@@ -1,5 +1,6 @@
 <script setup>
 
+import SvgIcon from "@/components/SvgIcon.vue";
 </script>
 
 <template>

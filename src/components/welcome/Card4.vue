@@ -1,6 +1,7 @@
 <script setup>
 
 import CardLayout from "@/components/welcome/CardLayout.vue";
+import SvgIcon from "@/components/SvgIcon.vue";
 </script>
 
 <template>
