@@ -1,6 +1,6 @@
 <script setup>
 
-import ButtonsLayout from "@/components/welcome/ButtonsLayout.vue";
+import ButtonsLayout from "@/components/welcome/ButtonLayout.vue";
 </script>
 
 <template>

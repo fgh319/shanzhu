@@ -1,13 +1,13 @@
 import {createRouter, createWebHashHistory} from 'vue-router'
 import Welcome from "@/views/Welcome.vue";
 import Card1 from "@/components/welcome/Card1.vue";
-import Buttons1 from "@/components/welcome/Buttons1.vue";
+import Buttons1 from "@/components/welcome/Button1.vue";
 import Card2 from "@/components/welcome/Card2.vue";
-import Buttons2 from "@/components/welcome/Buttons2.vue";
+import Buttons2 from "@/components/welcome/Button2.vue";
 import Card3 from "@/components/welcome/Card3.vue";
-import Buttons3 from "@/components/welcome/Buttons3.vue";
+import Buttons3 from "@/components/welcome/Button3.vue";
 import Card4 from "@/components/welcome/Card4.vue";
-import Buttons4 from "@/components/welcome/Buttons4.vue";
+import Buttons4 from "@/components/welcome/Button4.vue";
 
 export const router = createRouter({
   history: createWebHashHistory(),
