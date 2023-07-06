@@ -9,10 +9,14 @@
       <h1>轻记账</h1>
     </header>
     <main>
-      <RouterView name="cards"></RouterView>
+      <router-view name="cards" v-slot="{ Component }">
+        <transition name="slide">
+          <component :is="Component" />
+        </transition>
+      </router-view>
     </main>
     <footer>
-      <RouterView name="buttons"></RouterView>
+      <router-view name="buttons"></router-view>
     </footer>
   </div>
 </template>
@@ -37,13 +41,35 @@
       }
     }
     main {
-      height: 60%;
+      flex-grow: 1;
       display: flex;
-      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      position: relative;
+
     }
     footer {
       height: 15%;
       display: flex;
+      justify-content: center;
+      align-items: center;
     }
+  }
+
+  .slide-enter-active,
+  .slide-leave-active {
+    transition: all 0.5s ease;
+    position: absolute;
+  }
+
+  .slide-enter-from {
+    transform: translateX(100vw);
+    opacity: 0;
+  }
+
+  .slide-leave-to {
+    transform: translateX(-100vw);
+    opacity: 0;
   }
 </style>

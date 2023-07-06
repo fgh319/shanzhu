@@ -10,7 +10,7 @@
 
 <style scoped lang="scss">
 .buttons {
-  flex-grow: 1;
+  width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
